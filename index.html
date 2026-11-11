@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publicador</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  /* Layout: una sola columna de lectura (~68ch), pestañas para cambiar entre Privacidad y Términos; cada documento en español y luego en inglés. */
+  :root {
+    --bg: #f6f7f9; --papel: #ffffff; --fg: #16181d; --suave: #5b6271; --linea: #e2e5eb; --acento: #e2531f; --acento-fondo: #fdeee7;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif; --texto: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0f1115; --papel: #171a21; --fg: #e9ebf1; --suave: #9aa2b1; --linea: #2a2f3a; --acento: #ff7a4d; --acento-fondo: #2a1a12; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --papel: #171a21; --fg: #e9ebf1; --suave: #9aa2b1; --linea: #2a2f3a; --acento: #ff7a4d; --acento-fondo: #2a1a12; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--texto); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+  .hoja { max-width: 760px; margin: 0 auto; display: grid; gap: 24px; }
+  header { display: grid; gap: 6px; }
+  .marca { font: 600 13px/1 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--acento); }
+  h1 { font: 700 clamp(28px, 5vw, 38px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+  .fecha { color: var(--suave); font-size: 14px; margin: 0; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid var(--linea); }
+  nav a { padding: 10px 14px; color: var(--suave); text-decoration: none; font-weight: 600; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  nav a[aria-current="page"] { color: var(--fg); border-color: var(--acento); }
+  nav a:focus-visible, a:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; border-radius: 4px; }
+  article { background: var(--papel); border: 1px solid var(--linea); border-radius: 14px; padding: clamp(20px, 4vw, 40px); min-width: 0; }
+  article h2 { font: 700 24px/1.25 var(--display); margin: 0 0 4px; }
+  article h3 { font: 600 17px/1.35 var(--display); margin: 28px 0 6px; }
+  article p, article li { max-width: 68ch; }
+  article ul { padding-left: 20px; display: grid; gap: 4px; }
+  .idioma { font: 600 12px/1 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--suave); margin: 0 0 18px; }
+  .separa { border: 0; border-top: 1px dashed var(--linea); margin: 40px 0 32px; }
+  .contacto { background: var(--acento-fondo); border-radius: 10px; padding: 14px 16px; }
+  .contacto b { user-select: all; }
+  a { color: var(--acento); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="hoja">
+  <header>
+    <span class="marca">¿Qué pasaría si?</span>
+    <h1>Publicador</h1>
+    <p class="fecha">Última actualización / Last updated: 11 de noviembre de 2026 · November 11, 2026</p>
+  </header>
+  <nav aria-label="Documentos"><a href="index.html" aria-current="page">Publicador</a><a href="privacidad.html">Privacidad · Privacy</a><a href="terminos.html">Términos · Terms</a></nav>
+  <article>
+    <h2>Publicador</h2>
+    <p class="idioma">Español</p>
+    <p>Publicador es una aplicación de escritorio para Windows con la que el creador del canal «¿Qué pasaría si?» publica sus propios videos cortos de historias animadas en TikTok, YouTube Shorts, Instagram y Facebook desde un solo lugar.</p>
+    <ul>
+      <li>Subes el video y su portada, y escribes o generas con IA el texto de cada red; todo se puede editar antes de publicar.</li>
+      <li>Antes de publicar en TikTok ves con qué cuenta publicas, eliges quién puede verlo, si permites comentarios, dúos y stitch, y si es contenido comercial.</li>
+      <li>Nada se publica sin que tú le des «Publicar» o lo programes.</li>
+    </ul>
+    <hr class="separa">
+    <h2>Publicador</h2>
+    <p class="idioma">English</p>
+    <p>Publicador is a Windows desktop app the creator of the "¿Qué pasaría si?" channel uses to publish their own short animated videos to TikTok, YouTube Shorts, Instagram and Facebook from one place.</p>
+    <ul>
+      <li>Add the video and its cover, then write or AI-draft the caption for each platform; everything can be edited before posting.</li>
+      <li>Before posting to TikTok you see which account you are posting to and choose who can view it, whether comments, duets and stitches are allowed, and whether it is commercial content.</li>
+      <li>Nothing is posted until you press Publish or schedule it.</li>
+    </ul>
+    <h3>Documentos / Documents</h3>
+    <ul>
+      <li><a href="privacidad.html">Política de privacidad / Privacy Policy</a></li>
+      <li><a href="terminos.html">Términos de servicio / Terms of Service</a></li>
+    </ul>
+  </article>
+</div>
+</body>
+</html>

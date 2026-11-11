@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publicador · Política de privacidad</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  /* Layout: una sola columna de lectura (~68ch), pestañas para cambiar entre Privacidad y Términos; cada documento en español y luego en inglés. */
+  :root {
+    --bg: #f6f7f9; --papel: #ffffff; --fg: #16181d; --suave: #5b6271; --linea: #e2e5eb; --acento: #e2531f; --acento-fondo: #fdeee7;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif; --texto: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0f1115; --papel: #171a21; --fg: #e9ebf1; --suave: #9aa2b1; --linea: #2a2f3a; --acento: #ff7a4d; --acento-fondo: #2a1a12; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --papel: #171a21; --fg: #e9ebf1; --suave: #9aa2b1; --linea: #2a2f3a; --acento: #ff7a4d; --acento-fondo: #2a1a12; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--texto); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+  .hoja { max-width: 760px; margin: 0 auto; display: grid; gap: 24px; }
+  header { display: grid; gap: 6px; }
+  .marca { font: 600 13px/1 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--acento); }
+  h1 { font: 700 clamp(28px, 5vw, 38px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+  .fecha { color: var(--suave); font-size: 14px; margin: 0; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid var(--linea); }
+  nav a { padding: 10px 14px; color: var(--suave); text-decoration: none; font-weight: 600; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  nav a[aria-current="page"] { color: var(--fg); border-color: var(--acento); }
+  nav a:focus-visible, a:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; border-radius: 4px; }
+  article { background: var(--papel); border: 1px solid var(--linea); border-radius: 14px; padding: clamp(20px, 4vw, 40px); min-width: 0; }
+  article h2 { font: 700 24px/1.25 var(--display); margin: 0 0 4px; }
+  article h3 { font: 600 17px/1.35 var(--display); margin: 28px 0 6px; }
+  article p, article li { max-width: 68ch; }
+  article ul { padding-left: 20px; display: grid; gap: 4px; }
+  .idioma { font: 600 12px/1 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--suave); margin: 0 0 18px; }
+  .separa { border: 0; border-top: 1px dashed var(--linea); margin: 40px 0 32px; }
+  .contacto { background: var(--acento-fondo); border-radius: 10px; padding: 14px 16px; }
+  .contacto b { user-select: all; }
+  a { color: var(--acento); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="hoja">
+  <header>
+    <span class="marca">¿Qué pasaría si?</span>
+    <h1>Publicador</h1>
+    <p class="fecha">Última actualización / Last updated: 11 de noviembre de 2026 · November 11, 2026</p>
+  </header>
+  <nav aria-label="Documentos"><a href="index.html">Publicador</a><a href="privacidad.html" aria-current="page">Privacidad · Privacy</a><a href="terminos.html">Términos · Terms</a></nav>
+  <article id="privacidad">
+    <h2>Política de privacidad</h2>
+    <p class="idioma">Español</p>
+
+    <p>Publicador («la App») es una aplicación de escritorio para Windows que usa el creador del canal «¿Qué pasaría si?» para publicar sus propios videos cortos en YouTube, Instagram, Facebook y TikTok. La App funciona en la computadora de quien la usa; no tiene servidores propios ni cuentas de usuario en internet.</p>
+
+    <h3>Qué datos usa la App</h3>
+    <ul>
+      <li><b>Permisos de acceso (tokens) de tus redes</b>: cuando vinculas una cuenta de YouTube, Instagram, Facebook o TikTok, la red te pide autorización y entrega un permiso de acceso. Se guarda solo en tu computadora.</li>
+      <li><b>Datos básicos de tu perfil</b>: nombre, nombre de usuario, foto de perfil e identificador de la cuenta, para mostrarte con qué cuenta publicas.</li>
+      <li><b>Tus videos, portadas y textos</b>: los archivos que eliges publicar y los textos (título, descripción, hashtags) que escribes o apruebas.</li>
+      <li><b>Estadísticas de tus publicaciones</b>: número de seguidores, vistas, likes, comentarios y compartidos de tus propios videos, para mostrártelos dentro de la App.</li>
+      <li><b>Configuración de cada publicación en TikTok</b>: la privacidad que eliges, si permites comentarios, dúos y stitch, y si declaras contenido comercial.</li>
+    </ul>
+
+    <h3>Para qué se usan</h3>
+    <ul>
+      <li>Publicar en tus cuentas los videos que tú eliges, con los textos y opciones que tú apruebas.</li>
+      <li>Mostrarte el estado de cada publicación y las estadísticas de tus propios videos.</li>
+      <li>Nada más: la App no vende, no renta y no comparte tus datos con terceros con fines publicitarios, y no incluye herramientas de rastreo o analítica.</li>
+    </ul>
+
+    <h3>Con quién se comparten</h3>
+    <ul>
+      <li><b>Las redes donde publicas</b> (YouTube/Google, Instagram y Facebook/Meta, TikTok): reciben el video y los textos únicamente cuando tú le das «Publicar» o programas una publicación.</li>
+      <li><b>El proveedor de IA que configures</b> (por ejemplo, OpenAI): si usas la opción de escribir textos con IA, se le envía la transcripción del audio del video y tus notas para generar título, descripción y hashtags. La transcripción se hace en tu propia computadora.</li>
+      <li><b>Cloudflare</b>: para publicar en Instagram, la App abre un enlace temporal y privado para que Instagram descargue el video directamente desde tu computadora. El enlace solo sirve ese archivo y se cierra al terminar.</li>
+    </ul>
+
+    <h3>Datos de TikTok</h3>
+    <p>La App usa la API de TikTok con los permisos <code>user.info.basic</code>, <code>user.info.stats</code>, <code>video.list</code> y <code>video.publish</code>, únicamente para mostrar tu cuenta antes de publicar, publicar los videos que eliges y mostrarte las estadísticas de tus propios videos. Antes de cada publicación ves con qué cuenta publicas y eliges la privacidad y las interacciones permitidas.</p>
+
+    <h3>Datos de Google y YouTube</h3>
+    <p>El uso de la información recibida de las API de Google se apega a la <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado. La App usa los servicios de API de YouTube; consulta también la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a>.</p>
+
+    <h3>Dónde se guardan y por cuánto tiempo</h3>
+    <p>Todo se guarda en la computadora donde está instalada la App. Los permisos se conservan hasta que quitas la cuenta en la App o revocas el acceso desde la configuración de la red. Los videos y textos permanecen en tu computadora hasta que los borras.</p>
+
+    <h3>Cómo borrar tus datos</h3>
+    <ul>
+      <li>En la App, en «Cuentas», dale «Quitar» a la cuenta: se borra su permiso de tu computadora.</li>
+      <li>Puedes revocar el acceso en cualquier momento desde la configuración de seguridad o de apps conectadas de Google, Meta o TikTok.</li>
+      <li>Borrar la carpeta de la App elimina todos sus datos locales.</li>
+    </ul>
+
+    <h3>Menores de edad</h3>
+    <p>La App no está dirigida a menores de 13 años ni recopila a sabiendas datos de ellos.</p>
+
+    <h3>Cambios</h3>
+    <p>Si esta política cambia, se actualizará esta página y su fecha.</p>
+
+    <h3>Contacto</h3>
+    <p class="contacto">Responsable: «¿Qué pasaría si?». Escríbenos por mensaje directo en Instagram <b>@que_pasaria._si</b> o en TikTok <b>@_que_.pasaria_.si</b>.</p>
+
+    <hr class="separa">
+
+    <h2>Privacy Policy</h2>
+    <p class="idioma">English</p>
+    <p>Publicador (the "App") is a Windows desktop application used by the creator of the "¿Qué pasaría si?" channel to publish their own short videos to YouTube, Instagram, Facebook and TikTok. The App runs on the user's own computer; it has no servers of its own and no online user accounts.</p>
+
+    <h3>Data the App uses</h3>
+    <ul>
+      <li><b>Access tokens</b> granted by YouTube, Instagram, Facebook or TikTok when you link an account. They are stored only on your computer.</li>
+      <li><b>Basic profile information</b>: display name, username, profile picture and account ID, to show which account you are posting with.</li>
+      <li><b>Your videos, cover images and captions</b> that you choose to publish.</li>
+      <li><b>Statistics of your own posts</b>: follower count, views, likes, comments and shares, shown to you inside the App.</li>
+      <li><b>Your TikTok post settings</b>: the privacy level you pick, whether comments, duets and stitches are allowed, and any commercial content disclosure.</li>
+    </ul>
+
+    <h3>How it is used</h3>
+    <ul>
+      <li>To publish the videos you choose to your own accounts, with the captions and settings you approve.</li>
+      <li>To show you the status of each post and the statistics of your own videos.</li>
+      <li>Nothing else. The App does not sell, rent or share your data for advertising and contains no tracking or analytics.</li>
+    </ul>
+
+    <h3>Who it is shared with</h3>
+    <ul>
+      <li><b>The platforms you publish to</b> (YouTube/Google, Instagram and Facebook/Meta, TikTok), only when you press "Publish" or schedule a post.</li>
+      <li><b>The AI provider you configure</b> (for example, OpenAI), only if you use AI caption writing: the video's audio transcript and your notes are sent to generate a title, description and hashtags. Transcription runs locally on your computer.</li>
+      <li><b>Cloudflare</b>: to publish to Instagram, the App opens a temporary private link so Instagram can download the video directly from your computer. The link serves only that file and is closed when the upload finishes.</li>
+    </ul>
+
+    <h3>TikTok data</h3>
+    <p>The App uses the TikTok API scopes <code>user.info.basic</code>, <code>user.info.stats</code>, <code>video.list</code> and <code>video.publish</code> solely to show your account before posting, publish the videos you choose, and show statistics of your own videos. Before every post you see which account you are posting to and choose the privacy level and allowed interactions.</p>
+
+    <h3>Google and YouTube data</h3>
+    <p>The App's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. The App uses YouTube API Services; see also the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+    <h3>Storage and retention</h3>
+    <p>Everything is stored on the computer where the App is installed. Tokens are kept until you remove the account in the App or revoke access in the platform's settings. Videos and captions stay on your computer until you delete them.</p>
+
+    <h3>Deleting your data</h3>
+    <ul>
+      <li>In the App, go to "Cuentas" (Accounts) and press "Quitar" (Remove) on the account to delete its token from your computer.</li>
+      <li>You can revoke access at any time from the connected-apps or security settings of Google, Meta or TikTok.</li>
+      <li>Deleting the App's folder removes all of its local data.</li>
+    </ul>
+
+    <h3>Children</h3>
+    <p>The App is not directed to children under 13 and does not knowingly collect their data.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, this page and its date will be updated.</p>
+
+    <h3>Contact</h3>
+    <p class="contacto">Operator: "¿Qué pasaría si?". Send a direct message on Instagram <b>@que_pasaria._si</b> or on TikTok <b>@_que_.pasaria_.si</b>.</p>
+  </article>
+</div>
+</body>
+</html>

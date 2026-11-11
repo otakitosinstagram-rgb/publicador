@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publicador · Términos de servicio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+  /* Layout: una sola columna de lectura (~68ch), pestañas para cambiar entre Privacidad y Términos; cada documento en español y luego en inglés. */
+  :root {
+    --bg: #f6f7f9; --papel: #ffffff; --fg: #16181d; --suave: #5b6271; --linea: #e2e5eb; --acento: #e2531f; --acento-fondo: #fdeee7;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif; --texto: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0f1115; --papel: #171a21; --fg: #e9ebf1; --suave: #9aa2b1; --linea: #2a2f3a; --acento: #ff7a4d; --acento-fondo: #2a1a12; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #0f1115; --papel: #171a21; --fg: #e9ebf1; --suave: #9aa2b1; --linea: #2a2f3a; --acento: #ff7a4d; --acento-fondo: #2a1a12; color-scheme: dark }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--texto); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 32px 64px; }
+  .hoja { max-width: 760px; margin: 0 auto; display: grid; gap: 24px; }
+  header { display: grid; gap: 6px; }
+  .marca { font: 600 13px/1 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--acento); }
+  h1 { font: 700 clamp(28px, 5vw, 38px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+  .fecha { color: var(--suave); font-size: 14px; margin: 0; }
+  nav { display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid var(--linea); }
+  nav a { padding: 10px 14px; color: var(--suave); text-decoration: none; font-weight: 600; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  nav a[aria-current="page"] { color: var(--fg); border-color: var(--acento); }
+  nav a:focus-visible, a:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; border-radius: 4px; }
+  article { background: var(--papel); border: 1px solid var(--linea); border-radius: 14px; padding: clamp(20px, 4vw, 40px); min-width: 0; }
+  article h2 { font: 700 24px/1.25 var(--display); margin: 0 0 4px; }
+  article h3 { font: 600 17px/1.35 var(--display); margin: 28px 0 6px; }
+  article p, article li { max-width: 68ch; }
+  article ul { padding-left: 20px; display: grid; gap: 4px; }
+  .idioma { font: 600 12px/1 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--suave); margin: 0 0 18px; }
+  .separa { border: 0; border-top: 1px dashed var(--linea); margin: 40px 0 32px; }
+  .contacto { background: var(--acento-fondo); border-radius: 10px; padding: 14px 16px; }
+  .contacto b { user-select: all; }
+  a { color: var(--acento); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="hoja">
+  <header>
+    <span class="marca">¿Qué pasaría si?</span>
+    <h1>Publicador</h1>
+    <p class="fecha">Última actualización / Last updated: 11 de noviembre de 2026 · November 11, 2026</p>
+  </header>
+  <nav aria-label="Documentos"><a href="index.html">Publicador</a><a href="privacidad.html">Privacidad · Privacy</a><a href="terminos.html" aria-current="page">Términos · Terms</a></nav>
+  <article id="terminos">
+    <h2>Términos de servicio</h2>
+    <p class="idioma">Español</p>
+
+    <p>Estos términos regulan el uso de Publicador («la App»), operada por «¿Qué pasaría si?». Al usar la App aceptas estos términos.</p>
+
+    <h3>Qué hace la App</h3>
+    <p>La App permite preparar y publicar videos cortos en cuentas propias de YouTube, Instagram, Facebook y TikTok, escribir sus textos (a mano o con ayuda de IA) y consultar estadísticas de esas publicaciones.</p>
+
+    <h3>Tus cuentas y tu contenido</h3>
+    <ul>
+      <li>Solo puedes vincular cuentas que te pertenecen o que estás autorizado a administrar.</li>
+      <li>Eres responsable de los videos, imágenes, música y textos que publicas, y de contar con los derechos necesarios sobre ellos.</li>
+      <li>Antes de publicar revisas y apruebas el texto y las opciones de cada red. Nada se publica sin tu acción (publicar ahora o programar).</li>
+      <li>El contenido generado con IA se marca como tal en las redes que lo permiten.</li>
+    </ul>
+
+    <h3>Reglas de cada plataforma</h3>
+    <p>Al publicar con la App también aceptas y debes cumplir las reglas de cada red: los <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">Términos de servicio de YouTube</a>, las <a href="https://help.instagram.com/581066165581870" target="_blank" rel="noopener">Condiciones de uso de Instagram</a>, las <a href="https://www.facebook.com/terms.php" target="_blank" rel="noopener">Condiciones del servicio de Facebook</a> y los <a href="https://www.tiktok.com/legal/terms-of-service" target="_blank" rel="noopener">Términos de servicio de TikTok</a>, incluida su <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Confirmación de uso de música</a> y, cuando aplique, su <a href="https://www.tiktok.com/legal/page/global/bc-policy/en" target="_blank" rel="noopener">Política de contenido de marca</a>.</p>
+
+    <h3>Uso no permitido</h3>
+    <ul>
+      <li>Publicar spam, contenido engañoso, ilegal o que infrinja derechos de terceros.</li>
+      <li>Usar la App para acceder a cuentas ajenas sin autorización.</li>
+      <li>Intentar evadir límites o controles de las plataformas.</li>
+    </ul>
+
+    <h3>Disponibilidad y garantías</h3>
+    <p>La App se ofrece «tal cual». Depende de los servicios de terceros (YouTube, Meta, TikTok, Cloudflare y el proveedor de IA), que pueden cambiar, limitar o suspender su funcionamiento. No se garantiza que cada publicación se complete ni que esté libre de errores.</p>
+
+    <h3>Responsabilidad</h3>
+    <p>En la medida en que lo permita la ley, el operador de la App no es responsable de daños indirectos ni de pérdidas derivadas del uso de la App, de las decisiones de las plataformas sobre tu contenido o de la interrupción de sus servicios.</p>
+
+    <h3>Privacidad</h3>
+    <p>El tratamiento de datos se describe en la <a href="privacidad.html">Política de privacidad</a>.</p>
+
+    <h3>Terminación</h3>
+    <p>Puedes dejar de usar la App cuando quieras: quita tus cuentas en «Cuentas» y revoca el acceso desde cada red.</p>
+
+    <h3>Cambios y ley aplicable</h3>
+    <p>Estos términos pueden actualizarse; la fecha de esta página indica la versión vigente. Se rigen por las leyes de los Estados Unidos Mexicanos.</p>
+
+    <h3>Contacto</h3>
+    <p class="contacto">Mensaje directo en Instagram <b>@que_pasaria._si</b> o en TikTok <b>@_que_.pasaria_.si</b>.</p>
+
+    <hr class="separa">
+
+    <h2>Terms of Service</h2>
+    <p class="idioma">English</p>
+    <p>These terms govern the use of Publicador (the "App"), operated by "¿Qué pasaría si?". By using the App you agree to these terms.</p>
+
+    <h3>What the App does</h3>
+    <p>The App lets you prepare and publish short videos to your own YouTube, Instagram, Facebook and TikTok accounts, write their captions (manually or with AI assistance) and view statistics for those posts.</p>
+
+    <h3>Your accounts and content</h3>
+    <ul>
+      <li>You may only link accounts you own or are authorized to manage.</li>
+      <li>You are responsible for the videos, images, music and text you publish, and for holding the necessary rights to them.</li>
+      <li>Before publishing you review and approve each platform's caption and settings. Nothing is posted without your action (publish now or schedule).</li>
+      <li>AI-generated content is labeled as such on platforms that support it.</li>
+    </ul>
+
+    <h3>Platform rules</h3>
+    <p>When publishing through the App you also agree to and must follow each platform's rules: the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a>, the <a href="https://help.instagram.com/581066165581870" target="_blank" rel="noopener">Instagram Terms of Use</a>, the <a href="https://www.facebook.com/terms.php" target="_blank" rel="noopener">Facebook Terms of Service</a> and the <a href="https://www.tiktok.com/legal/terms-of-service" target="_blank" rel="noopener">TikTok Terms of Service</a>, including its <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a> and, where applicable, its <a href="https://www.tiktok.com/legal/page/global/bc-policy/en" target="_blank" rel="noopener">Branded Content Policy</a>.</p>
+
+    <h3>Prohibited use</h3>
+    <ul>
+      <li>Posting spam or misleading, illegal or infringing content.</li>
+      <li>Using the App to access accounts you are not authorized to use.</li>
+      <li>Attempting to circumvent platform limits or controls.</li>
+    </ul>
+
+    <h3>Availability and warranties</h3>
+    <p>The App is provided "as is". It depends on third-party services (YouTube, Meta, TikTok, Cloudflare and the AI provider), which may change, limit or suspend their operation. There is no guarantee that every post will complete or be error-free.</p>
+
+    <h3>Liability</h3>
+    <p>To the extent permitted by law, the App's operator is not liable for indirect damages or losses arising from use of the App, platform decisions about your content, or interruption of their services.</p>
+
+    <h3>Privacy</h3>
+    <p>Data handling is described in the <a href="privacidad.html">Privacy Policy</a>.</p>
+
+    <h3>Termination</h3>
+    <p>You may stop using the App at any time: remove your accounts under "Cuentas" (Accounts) and revoke access in each platform.</p>
+
+    <h3>Changes and governing law</h3>
+    <p>These terms may be updated; the date on this page shows the current version. They are governed by the laws of the United Mexican States.</p>
+
+    <h3>Contact</h3>
+    <p class="contacto">Direct message on Instagram <b>@que_pasaria._si</b> or on TikTok <b>@_que_.pasaria_.si</b>.</p>
+  </article>
+</div>
+</body>
+</html>
